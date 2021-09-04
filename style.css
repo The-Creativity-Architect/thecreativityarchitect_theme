@@ -873,8 +873,8 @@ main {
 }
 
 #primary {
-    width: 90vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -927,7 +927,7 @@ main {
 
 /* ## Layouts --------------------------------*/
 
-@import url( '/inc/layouts/grid/grid.ss' );
+@import url( '/inc/layouts/grid/grid.css' );
 
 /* ## Components -----------------------------*/
 /* ### Posts and Pages */
