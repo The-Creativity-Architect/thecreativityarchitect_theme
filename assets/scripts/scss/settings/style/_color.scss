@@ -1,0 +1,35 @@
+@import "color/gray-scale";
+@import "color/color";
+@import "color/custom";
+@import "color/theme";
+
+/* Contrast */
+/* The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7. */
+/* See https                     ://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast */
+$min-contrast-ratio              : 4.5;
+
+$dark-contrast                   : $dark;
+$light-contrast                  : $light;
+
+@import "color/rgba";
+@import "color/contrast";
+
+$text                  : tint($primary, $text-percentage);
+$quote                 : tint($accent, $quote-percentage);
+$comment               : tint($primary, $comment-percentage);
+$muted                 : tint($accent, $muted-percentage);
+
+$heading               : tint($primary, $heading-percentage);
+$site                  : tint($primary, $site-percentage);
+$page                  : tint($secondary, $page-percentage);
+$post                  : tint($accent, $post-percentage);
+$lead                  : tint($accent, $lead-percentage);
+
+$button                : tint($secondary, $button-percentage);
+$border                : tint($accent, $border-percentage);
+$shadow                : tint($primary, $shadow-percentage);
+$card                  : tint($primary, $card-percentage);
+
+$link                  : tint($secondary, $link-percentage);
+$active                : tint($primary, $active-percentage);
+$inactive              : tint($primary, $inactive-percentage);

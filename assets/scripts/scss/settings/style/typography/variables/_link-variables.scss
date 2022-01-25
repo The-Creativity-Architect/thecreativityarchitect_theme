@@ -1,0 +1,66 @@
+$link-offset-y                : $offset-y;
+$link-offset-x                : $offset-x;
+$link-font-size               : $font-size-md;;
+$link-font-weight             : $font-weight-bold;
+$link-active                  : shade($link, $inactive-percentage);
+$link-hover                   : shade($link-active, $hover-percentage);
+$link-transition              : color .15s ease-in-out, background .15s ease-in-out, border .15s ease-in-out;
+$link-inactive                : shade($link, $inactive-percentage);
+
+$tabs-border                  : shade($link-active, $border-percentage);
+$tabs-border-width            : $base-width;
+$tabs-border-radius           : $base-radius;
+$tabs-hover-border            : shade($tabs-border, $hover-percentage);
+$tabs-link-active             : $gray-700;
+$tabs-link-active-bg          : $body-bg;
+$tabs-link-active-border      : $gray-300 $gray-300 $tabs-link-active-bg;
+
+$pills-border-radius          : shade($link-active, $border-percentage);
+$pills-link-active            : $link;
+$pills-link-active-bg         :sshade($pills-link-active, $background-percentage);
+// scss-docs-end variables
+
+
+// Navbar
+
+// scss-docs-start navbar-variables
+$navbar-offset-y              : $spacer * .5;
+$navbar-offset-x              : null;
+
+$navbar-link-offset-x         : .5rem;
+
+$navbar-brand-font-size       : $font-size-lg;
+// Compute the navbar-brand offset-y so the navbar-brand will have the same height as navbar-text and link
+$link-height                  : 17px * $line-height-base + 26px * 2;
+$navbar-brand-height          : $navbar-brand-font-size * $line-height-base;
+$navbar-brand-offset-y        : ($link-height - 26px) * .5;
+$navbar-brand-margin-end      : 1rem;
+
+$navbar-toggler-offset-y      : .25rem;
+$navbar-toggler-offset-x      : .75rem;
+$navbar-toggler-font-size     : $font-size-lg;
+$navbar-toggler-border-radius : $btn-border-radius;
+$navbar-toggler-focus-width   : $btn-focus-width;
+$navbar-toggler-transition    : box-shadow .15s ease-in-out;
+// scss-docs-end navbar-variables
+
+// scss-docs-start navbar-theme-variables
+$navbar-dark                  : rgba($white, .55);
+$navbar-dark-hover            : rgba($white, .75);
+$navbar-dark-active           : $white;
+$navbar-dark-inactive         : rgba($white, .25);
+$navbar-dark-toggler-icon-bg  : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border   : rgba($white, .1);
+
+$navbar-light                 : rgba($black, .55);
+$navbar-light-hover           : rgba($black, .7);
+$navbar-light-active          : rgba($black, .9);
+$navbar-light-inactive        : rgba($black, .3);
+$navbar-light-toggler-icon-bg : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border  : rgba($black, .1);
+
+$navbar-light-brand           : $navbar-light-active;
+$navbar-light-brand-hover     : $navbar-light-active;
+$navbar-dark-brand            : $navbar-dark-active;
+$navbar-dark-brand-hover      : $navbar-dark-active;
+// scss-docs-end navbar-theme-variables

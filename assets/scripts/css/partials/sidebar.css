@@ -1,0 +1,18 @@
+/**
+ * partials/sidebar
+ * ---
+ */
+.sidebar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-left: 11vw;
+  border: 2px solid purple;
+  width: 90vw;
+  max-height: 5vh;
+}
+.sidebar .nav {
+  width: 60vw;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

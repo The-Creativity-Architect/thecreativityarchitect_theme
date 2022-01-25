@@ -1,0 +1,62 @@
+/*
+ * __________________________________ FEATURES
+ */
+
+/* Variable Prefix */
+  /* for '              :root' CSS variables */
+  $variable-prefix      : ca- !default;
+
+/*
+ *_____________________________________ ESCAPED CHARACTERS
+ */
+    $escaped-characters : (
+      ("<", "%3c"),
+      (">", "%3e"),
+      ("#", "%23"),
+      ("(", "%28"),
+      (")", "%29"),
+    );
+
+@import "properties/positioning";
+/* _____________________________________ SIZES */
+  $size-base            : 1.15 !default;
+@import "properties/size";
+
+/* _____________________________________ SPACING */
+    $spacer             : 1 !default;
+
+    $spacer-y           : $spacer * $xs !default;
+    $spacer-x           : $spacer * $sm !default;
+
+    $block-spacing      : 1.5rem !default;
+@import "properties/spacing";
+
+/* _____________________________________ PADDING */
+  $offset               : 16px !default;
+@import "properties/padding";
+
+/* ____________________________________ BORDERS */
+  $base-width           : 1px !default;
+  $base-radius          : .95rem !default;
+  $border-color         : tint($accent, $border-percentage) !default;
+@import "properties/border";
+
+/* ____________________________________ ANIMATION */
+  $animation-speed    : 250ms !default;
+  $animation          : ease-in-out !default;
+
+/* _____________________________________ TYPOGRAPHY */
+  $font-size-root       : null !default;
+  $font-size-base       : 1.05rem !default;
+  $base-unit            : 1.15rem !default; // Assumes the browser default, typically `16px`
+  $font-weight-base     : 400 !default;
+  $line-height-base     : 1.15 !default;
+  $heading-font-size-base    : 1.25vh !default;
+
+@import "properties/link";
+
+/* ____________________________________ Z-INDEX */
+@import "properties/zindex";
+
+/* ____________________________________ WIDTH */
+@import "properties/width";

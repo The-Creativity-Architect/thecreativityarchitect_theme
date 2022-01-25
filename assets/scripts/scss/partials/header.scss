@@ -1,0 +1,26 @@
+/**
+ * partials/header
+ * ---
+ */
+//Header container
+.header {
+  margin: 0;
+  overflow: visible;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  border: 2px solid yellow;
+}
+// Logo
+.logo {
+  max-width: 10vw;
+  max-height: 10vh;
+  overflow: visible;
+}
+
+.logo-img {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 1.75vw;
+  transform: rotate(0.5turn) scale(1.75);
+}

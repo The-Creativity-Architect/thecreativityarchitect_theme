@@ -1,0 +1,63 @@
+/**
+ * partials/wordpress
+ * ---
+ * Wordpess core classes
+ */
+
+
+.sticky {}
+
+.bypostauthor {}
+
+/**
+ * Alignment
+ */
+
+.alignnone {
+  margin: $vertical-spacer $horizontal-spacer-lg $vertical-spacer-lg 0;
+}
+
+.aligncenter {
+  display: block;
+  margin: $vertical-spacer auto;
+}
+
+.alignright {
+  float: right;
+  margin: $vertical-spacer 0 $vertical-spacer-lg $horizontal-spacer-lg;
+}
+
+.alignleft {
+  float: left;
+  margin: $vertical-spacer $horizontal-spacer-lg $vertical-spacer-lg 0;
+}
+
+
+/**
+ * Gallery & images
+ */
+
+.wp-caption {
+  background: $main-bg;
+  border: thin solid shade($main-bg, $border-percentage);
+  max-width: 95%;
+  padding: $offset-y $offset-x;
+  text-align: center;
+
+  & img {
+    width: auto;
+    max-width: 98.5%;
+    height: auto;
+    border: 0 none;
+
+    @include reset-box;
+  }
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  margin: 0;
+  padding: 0 $offset-y $offset-x;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}

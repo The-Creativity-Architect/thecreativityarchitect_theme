@@ -1,0 +1,50 @@
+/******************************************************************
+Site Name: The Creativity Architect
+Author: CJM Termini
+
+Stylesheet: Responsive  Stylesheet
+
+******************************************************************/
+/**
+ * Required Variables
+ */
+/**
+ * Required Variables
+ */
+/*
+ * Media query to respond to a minimum size (mobile first)
+ */
+/*
+ * Media query to respond to a maximum size
+ */
+/**
+ * Root Media Query Variables
+ */
+/**
+ * Root Media Query Variables
+ */
+/**
+ * Extends
+ */
+.default-max-width {
+  max-width: calc(100vw - 33vh);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wide-max-width {
+  max-width: calc(100vw - 4vh);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1224px) {
+  .full-max-width {
+    width: auto;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

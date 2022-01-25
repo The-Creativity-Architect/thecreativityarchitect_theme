@@ -1,0 +1,231 @@
+/**
+ * modules/variables
+ * ---
+ */
+ $active-percentage            : 5%;
+ $inset-percentage             : 6%;
+ $link-percentage              : 10%;
+ $visited-percentage           : 20%;
+ $hover-percentage             : 30%;
+ $focus-percentage             : 40%;
+ $muted-percentage             : 50%;
+ $inactive-percentage          : 60%;
+ $target-percentage            : 4%;
+ $target-within-percentage     : 14%;
+ $scope-percentage             : 24%;
+ $focus-visible-percentage     : 34%;
+ $focus-within-percentage      : 44%;
+ $background-percentage        : 41%;
+ $nav-percentage               : 51%;
+ $border-percentage            : 61%;
+ $button-percentage            : 71%;
+ $card-percentage              : 81%;
+ $shadow-percentage            : 91%;
+ $text-percentage              : 52%;
+ $caption-percentage           : 62%;
+ $quote-percentage             : 72%;
+ $comment-percentage           : 82%;
+ $heading-percentage           : 92%;
+ $info-percentage              : 94%;
+ $lead-percentage              : 55%;
+ $post-percentage              : 65%;
+ $page-percentage              : 75%;
+ $site-percentage              : 85%;
+ $title-percentage             : 95%;
+ $local-link-percentage        : 20%;
+ $btn-disabled-opacity         : 0.45;
+ $input-btn-focus-color-opacity: 0.25;
+ $input-btn-focus-blur         : 0;
+
+/**
+ * Typography
+ */
+
+$font-family-base              : "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+
+
+/**
+ * Colors
+ */
+
+ $white                        : #e4edf4;
+ $gray-100                     : #c0c0c0;
+ $gray-200                     : #9a9a9a;
+ $gray-300                     : #7b7b7b;
+ $gray-400                     : #626262;
+ $gray-500                     : #4e4e4e;
+ $gray-600                     : #3e3e3e;
+ $gray-700                     : #323232;
+ $gray-800                     : #282828;
+ $gray-900                     : #1a1a1a;
+ $black                        : #000100;
+
+ $blue                         : #0dcaf0;
+ $indigo                       : #6600ff;
+ $purple                       : #510bda;
+ $pink                         : #ff6fa9;
+ $red                          : #ff555a;
+ $orange                       : #ffd080;
+ $yellow                       : #ffcc33;
+ $green                        : #cdffff;
+ $teal                         : #b5ede4;
+ $cyan                         : #0abab5;
+ $gray                         : $gray-600;
+
+ /* Custom Colors */
+   $silver                     : #a8a9ad;
+
+ $primary                      : $cyan;
+ $secondary                    : $yellow;
+ $accent                       : $silver;
+ $valid                        : $green;
+ $info                         : $blue;
+ $attention                    : $orange;
+ $invalid                      : $red;
+ $alert                        : $pink;
+
+/* ____________________________________ VARIABLES */
+
+ $text                         : tint($primary, $text-percentage);
+ $quote                        : tint($accent, $quote-percentage);
+ $comment                      : tint($primary, $comment-percentage);
+ $muted                        : tint($accent, $muted-percentage);
+
+ $heading                      : tint($primary, $heading-percentage);
+ $site                         : tint($primary, $site-percentage);
+ $page                         : tint($secondary, $page-percentage);
+ $post                         : tint($accent, $post-percentage);
+ $lead                         : tint($accent, $lead-percentage);
+
+ $button                       : tint($secondary, $button-percentage);
+ $border                       : tint($accent, $border-percentage);
+ $shadow                       : tint($primary, $shadow-percentage);
+ $card                         : tint($primary, $card-percentage);
+
+ $link                         : tint($secondary, $link-percentage);
+ $active                       : tint($primary, $active-percentage);
+ $inactive                     : tint($primary, $inactive-percentage);
+
+ $body-text: $primary;
+ $body-bg                      : $accent;
+ $selection-bg                 : #04A4CC;
+
+
+/**
+ * Grid
+ */
+
+ /*! Quickly modify global styling by enabling or disabling optional features. */
+ $enable-caret                 : true;
+ $enable-rounded               : true;
+ $enable-shadows               : true;
+ $enable-gradients             : true;
+ $enable-transitions           : true;
+ $enable-reduced-motion        : true;
+ $enable-smooth-scroll         : true;
+ $enable-grid-classes          : true;
+ $enable-container-classes     : true;
+ $enable-cssgrid               : true;
+ $enable-button-pointers       : true;
+ $enable-rfs                   : true;
+ $enable-validation-icons      : true;
+ $enable-negative-margins      : true;
+ $enable-deprecation-messages  : true;
+ $enable-important-utilities   : true;
+
+/* Variable Prefix */
+ /* for '                      :root' CSS variables */
+ $variable-prefix              : ca-;
+
+/* _____________________________________ POSITIONING */
+/* Position Values Map */
+  $position-values             : (
+    0                          : 0,
+    25                         : 25%,
+    50                         : 50%,
+    75                         : 75%,
+    100                        : 100%
+  );
+
+/* Aspect Ratios Map */
+  $aspect-ratios               : (
+    '1x1'                      : 100%,
+    '4x3'                      : calc(3 / 4 * 100%),
+    '16x9'                     : calc(9 / 16 * 100%),
+    '21x9'                     : calc(9 / 21 * 100%)
+  );
+
+/* _____________________________________ SIZES */
+ $size-base                    : 1.15;
+
+/* _____________________________________ SPACING */
+ $spacer                       : 1;
+ $block-spacing                : 1.5rem;
+
+/* _____________________________________ PADDING */
+  $offset                      : 16px;
+
+/* ____________________________________ BORDERS */
+  $base-width                  : 1px;
+  $base-radius                 : .95rem;
+  $border-color                : shade($accent, $border-percentage);
+
+/* _____________________________________ TYPOGRAPHY */
+@import "fonts";
+
+/* FONT STACKS ______ */
+/* Enable keyword, short hand for calling font Stack. */
+$font-sans-serif: sans-serif;
+$font-serif: serif;
+$font-monospace: monospace;
+
+  $primary-font-family     : $font-sans-serif;
+  $secondary-font-family   : $font-serif;
+
+  $font-size-root              : null;
+  $font-size-base              : 1.05rem;
+  $base-unit                   : 1.15rem; // Assumes the browser default, typically `16px`
+  $font-weight-base            : 400;
+  $line-height-base            : 1.15;
+  $heading-font-size-base      : 1.25vh;
+
+  $text-align              : null;
+  $text-margin-bottom      : $offset;
+  $paragraph-margin-bottom : $text-margin-bottom;
+
+  $site-font               : "Euphorigenic", sans-serif;
+  $primary-font            : "Hand Typewriter", sans-serif;
+  $secondary-font          : "Enjoy Writing", sans-serif;
+  $tertiary-font           : "Raleway", sans-serif;
+  $main-font               : Avdira, sans-serif;
+  $accent-font             : "GlassAntiqua-Regular", sans-serif;
+
+/* _____________________________________ ZINDEX */
+  $z-index-html                : 25;
+  $z-index-body                : 50;
+  $z-index-wrapper             : 100;
+
+  $z-index-main                : 300;
+
+  $z-index-article             : 400;
+
+  $z-index-content             : 405;
+
+  $z-index-header              : 500;
+  $z-index-site-title          : 525;
+
+  $z-index-footer              : 600;
+
+  $z-index-sidebar             : 615;
+
+  $z-index-nav                 : 700;
+
+  $z-index-dropdown            : 1000;
+  $z-index-sticky              : 1020;
+  $z-index-fixed               : 1030;
+  $z-index-offcanvas-backdrop  : 1040;
+  $z-index-offcanvas           : 1045;
+  $z-index-modal-backdrop      : 1050;
+  $z-index-modal               : 1055;
+  $z-index-popover             : 1070;
+  $z-index-tooltip             : 1080;

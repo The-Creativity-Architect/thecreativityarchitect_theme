@@ -1,5 +1,0 @@
-    "name": "the creativity architect wordpress theme",
-    "description": "a wordpress theme for bloggers, authors, and any creative, who needs a portfolio",
-    "require": {
-        "php": ">=7.4",
-        "another-vendor/package": "1.*

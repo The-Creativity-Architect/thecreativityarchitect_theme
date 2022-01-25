@@ -1,0 +1,46 @@
+// scss-docs-start type-variables
+$lead-font                  : "Pompiere" !default;
+$lead-font-size             : $base-unit * $lg !default;
+$lead-font-weight           : 300 !default;
+$lead-text                  : shift($post-title, $muted-percentage) !default;
+
+$small-font-size            : sm !default;
+
+$sub-sup-font-size          : xs !default;
+
+$initialism-font-size       : sm !default;
+
+$blockquote-font-family     : $emphasis-text-font !default;
+$blockquote-margin-y        : $offset-y !default;
+$blockquote-font-size       : $font-size-base * 2.25 !default;
+$blockquote-text-footer-color     : $accent !default;
+$blockquote-footer-font-size: md !default;
+$blockquote-border-color          : shade(
+  $blockquote-text-footer-color,
+  $border-percentage
+) !default;
+
+$hr-margin-y                : $offset !default;
+$hr-text                    : shade($pink, $text-percentage) !default;
+$hr-height                  : $base-unit * 2 !default;
+$hr-opacity                 : .25 !default;
+$hr-border                  : shade($pink, $border-percentage) !default;
+$hr-border-width            : $border-width-md !default;
+
+$legend-margin-bottom       : 0.5rem !default;
+$legend-font-size           : xl !default;
+$legend-font-weight         : null !default;
+
+$mark-padding               : 0.2rem !default;
+
+$dt-font-weight             : $font-weight-bold !default;
+
+$nested-kbd-font-weight     : $font-weight-bold !default;
+
+$list-inline-padding        : 0.5rem !default;
+
+$mark-bg                    : $gray-300 !default;
+
+$figure-caption-font-size   : $small-font-size !default;
+
+// scss-docs-end type-variables

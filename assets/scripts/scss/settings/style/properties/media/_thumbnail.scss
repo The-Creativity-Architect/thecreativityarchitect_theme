@@ -1,0 +1,10 @@
+/* ___________________________________________________ THUMBNAIL */
+
+// scss-docs-start thumbnail-variables
+$thumbnail-padding:                 .25rem !default;
+$thumbnail-bg:                      $body-bg !default;
+$thumbnail-border-width:            $base-width !default;
+$thumbnail-border-color:            shade($thumbnail-bg, $thumbnail-percentage) !default;
+$thumbnail-border-radius:           $thumbnail-radius !default;
+$thumbnail-box-shadow:              $box-shadow-sm !default;
+// scss-docs-end thumbnail-variables

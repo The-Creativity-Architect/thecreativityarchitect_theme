@@ -1,0 +1,18 @@
+/**
+ * partials/sidebar
+ * ---
+ */
+
+
+.sidebar {
+  align-items: center;
+  .nav {
+    width: 60vw;
+  }
+  display: flex;
+  flex-direction: row;
+  padding-left: 11vw;
+  border: 2px solid purple;
+  width: 90vw;
+  max-height: 5vh;
+}

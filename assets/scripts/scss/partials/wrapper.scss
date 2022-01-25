@@ -1,0 +1,18 @@
+/**
+ * partials/wrapper
+ * ---
+ */
+.wrapper {
+
+}
+
+
+
+
+
+.wrapper-slider {
+  display: flex;
+  flex-direction: row;
+  max-width: $wrapper-width;
+  overflow-x: scroll;
+}

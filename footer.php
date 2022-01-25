@@ -1,38 +1,34 @@
-<?php
-	/*-----------------------------------------------------------------------------------*/
-	/* This template will be called by all other template files to finish
-	/* rendering the page and display the footer area/content
-	/*-----------------------------------------------------------------------------------*/
-?>
+			<!-- footer -->
+			<footer class="footer" role="contentinfo">
 
-</main><!-- / end page container, begun in the header -->
+				<!-- copyright -->
+			    <?php
+				    printf( '<small class="copyright">' . __( '&copy; %1$s Copyright %2$s. Powered by <a href="%3$s" title="WordPress">WordPress</a> &amp; <a href="%4$s" title="THEMENAME">THEMENAME</a>.', 'THEMENAME' ) . '</small>',
+				    	date( 'Y'),
+				    	esc_html( get_the_author_meta( $field = 'nickname', $user_id = false ) ),
+				    	'//wordpress.org',
+				    	'//THEMENAME.com'
+					);
+				?>
+				<!-- /copyright -->
 
-<footer class="site-footer">
-	<div class="widget-wrapper">
-		<nav class="site-navigation" id="menu-1">
-			<?php wp_nav_menu(
-				array(
-					'theme_location' => 'footer',
-					'menu_id'        => 'menu-1', ) ); ?>
-		</nav>
-	</div>
+			</footer>
+			<!-- /footer -->
 
-		<div class="site-info container" id="copyright">
-			<p> Based on starter themes: <a href="http://bckmn.com/naked-wordpress" rel="theme">Naked</a> ,
-				<a href="http://undescores.me"> Underscores</a>,
-				and <a href="https://themble.com/bones/"> Bones</a>
-			on <a href="http://wordpress.org" rel="generator">Wordpress</a>. |
-			All works are &copy; CJMTermini & The Creativity Architect; unless stated <a href="/#citations">otherwise</a>.
-		</p>
+		</div>
+		<!-- /wrapper -->
 
-	</div><!-- .site-info -->
-</footer><!-- #colophon .site-footer -->
+		<?php wp_footer(); ?>
 
-<?php wp_footer();
-// This fxn allows plugins to insert themselves/scripts/css/files (right here) into the footer of your website.
-// Removing this fxn call will disable all kinds of plugins.
-// Move it if you like, but keep it around.
-?>
+		<!-- analytics -->
+		<script>
+		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+		ga('send', 'pageview');
+		</script>
 
-</body>
+	</body>
 </html>

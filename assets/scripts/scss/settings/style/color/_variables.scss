@@ -1,0 +1,84 @@
+/* ____________________________________ VARIABLES */
+
+  /* Typography */
+  $text                      : tint($primary, $text-percentage) !default;
+  $quote                     : tint($accent, $quote-percentage) !default;
+  $comment                   : tint($primary, $comment-percentage) !default;
+  $muted                     : tint($accent, $muted-percentage) !default;
+
+  $heading                   : tint($primary, $heading-percentage) !default;
+  $site                      : tint($primary, $site-percentage) !default;
+  $page                      : tint($secondary, $page-percentage) !default;
+  $post                      : tint($accent, $post-percentage) !default;
+  $lead                      : tint($accent, $lead-percentage) !default;
+
+
+/* ____________________________________ FOUNDATION */
+/* __________________________ UTILITY */
+$link                        : tint($secondary, $link-percentage) !default;
+  /* Link Utilities */
+  $active                    : tint($primary, $active-percentage) !default;
+  $active-bg                 : shade($active, $background-percentage) !default;
+  $active-border             : shade($active, $border-percentage) !default;
+
+  $inactive                  : tint($primary, $inactive-percentage) !default;
+  $inactive-bg               : shade($inactive, $background-percentage) !default;
+  $inactive-border           : shade($inactive, $border-percentage) !default;
+
+
+/* __________________________ OBJECTS */
+  $button                    : tint($secondary, $button-percentage) !default;
+  $border                    : tint($accent, $border-percentage) !default;
+  $shadow                    : shade($primary, $shadow-percentage) !default;
+
+/* __________________________ COMPONENTS */
+  $card                      : tint($primary, $card-percentage) !default;
+
+  /* Nav */
+  $nav                       : tint($link, $nav-percentage) !default;
+    $nav-link-text           : tint($nav, $link-percentage) !default;
+      $nav-link-text-hover   : shade($nav-link-text, $hover-percentage) !default;
+      $nav-link-text-inactive: shade($nav-link-text, $inactive-percentage) !default;
+
+    // Navbar
+    $navbar-dark-text        : $accent !default;
+    $navbar-light-text       : $primary !default;
+
+  /* Lists */
+  $list-group-text           : $gray-900 !default;
+
+  $shadow-text               : .5rem .75rem .25rem $shadow !default;
+  $shadow-box                : .5rem .75rem .25rem $shadow !default;
+
+
+
+  /* Utilities Typography */
+  $text-muted                : shift($text, $muted-percentage) !default;
+
+  /* Nav Utilities */
+
+
+
+  /* Utilities Input*/
+  $input-text                : $gray-500 !default;
+  $input-bg                  : $gray-100 !default;
+  $input-border              : $gray-900 !default;
+  $input-text-focus          : $gray-800 !default;
+  $input-bg-focus            : $white !default;
+  $input-border-focus        : $gray-100 !default;
+
+/* ______________________________________________________ BACKGROUNDS */
+  /* Theme BG Colors */
+  $primary-bg                : tint($primary, $background-percentage) !default;
+  $secondary-bg              : tint($secondary, $background-percentage) !default;
+  $accent-bg                 : tint($accent, $background-percentage) !default;
+  $valid-bg                  : tint($valid, $background-percentage) !default;
+  $invalid-bg                : tint($invalid, $background-percentage) !default;
+  $invalid-bg                : tint($invalid, $background-percentage) !default;
+  $attention-bg              : tint($attention, $background-percentage) !default;
+  $info-bg                   : tint($info, $background-percentage) !default;
+
+  /* Background */
+  $body-bg                   : tint($primary, $background-percentage) !default;
+  $page-bg                   : tint($secondary, $background-percentage) !default;
+  $main-bg                   : tint($accent, $background-percentage) !default;

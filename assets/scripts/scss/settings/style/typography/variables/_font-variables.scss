@@ -1,0 +1,94 @@
+/* _______________________________________________________ FONT VARIABLES */
+/* Enable keyword, short hand for callig font Stack. */
+$primary-font-family     : sans-serif !default;
+$secondary-font-family   : serif !default;
+
+$body-font               : sans-serif !default;
+$code-font               : monospace !default;
+
+$text-align              : null !default;
+$text-margin-bottom      : $offset !default;
+$paragraph-margin-bottom : $text-margin-bottom !default;
+
+$quotation               : oblique;
+$citation                : italic;
+$link                    : underline;
+
+$site-font               : "Euphorigenic", sans-serif;
+$primary-font            : "Hand Typewriter", sans-serif;
+$secondary-font          : "Enjoy Writing", sans-serif;
+$tertiary-font           : "Raleway", sans-serif;
+
+$main-font               : Avdira, sans-serif;
+$lead-font               : Raylig, sans-serif;
+$article-font            : "TELETYPE 1945-1985" !default;
+
+$accent-font             : "GlassAntiqua-Regular", sans-serif;
+
+/* ________________________________________________________ TEXTS & TITLES */
+  /* Color */
+  $text                  : shade($primary, 60%);
+  $btn-text              : shade($text, $button-percentage);
+  $caption-text          : shade($text, $caption-percentage);
+
+  $post-title            : shade($accent, $post-percentage);
+  $lead-text             : shade($post-title, $lead-percentage);
+  $footer-text           : shade($accent, $info-percentage);
+  $quote-text            : shade($footer-text, $quote-percentage);
+
+  $nav-text              : shade($link, $nav-percentage);
+  $page-title            : shade($secondary, $page-percentage);
+
+  $site-title            : shade($primary, $site-percentage);
+  $text-muted            : color-mix(in srgb, $text $muted-percentage $accent);
+
+  /* Font Family */
+  $author-text-font      : 'Euphorigenic', sans-serif;
+  $text-font             : $main-font, sans-serif;
+  $btn-text-font         : $tertiary-font , sans-serif;
+  $emphasis-text-font    : $accent-font, sans-serif;
+  $footer-text-font      : $tertiary-font, sans-serif;
+  $lead-text-font        : $lead-font, sans-serif;
+  $nav-text-font         : $tertiary-font, sans-serif;
+  $page-title-font       : $primary-font, sans-serif;
+  $post-title-font       : $secondary-font, sans-serif;
+  $site-title-font       : $primary-font, sans-serif;
+
+/* ______________________________________________________ FONT SIZE */
+  $font-size-xs          : calc($font-size-base * $xs);
+  $font-size-sm          : calc($font-size-base * $sm);
+  $font-size-md          : $font-size-base;
+  $font-size-lg          : calc($font-size-base * $lg);
+  $font-size-xl          : calc($font-size-base * $xl);
+  $font-size-xxl         : calc($font-size-base * $xxl);
+
+  /* Font Weight */
+  $font-weight-lighter   : lighter !default;
+  $font-weight-light     : 300 !default;
+  $font-weight-normal    : 400 !default;
+  $font-weight-bold      : 700 !default;
+  $font-weight-bolder    : bolder !default;
+
+  $font-weight-base      : $font-weight-normal !default;
+
+  /* Letter Spacing */
+  $letter-spacing-xs     : calc($xs * $base-unit) rem;
+  $letter-spacing-sm     : calc($sm * $base-unit) rem;
+  $letter-spacing-md     : calc($md * $base-unit) rem;
+  $letter-spacing-lg     : calc($lg * $base-unit) rem;
+  $letter-spacing-xl     : calc($xl * $base-unit) rem;
+  $letter-spacing-xxl    : calc(3 * $base-unit) rem;
+
+  /* Line Height */
+  $line-height-base      : 1.15 !default;;
+  $line-height-xs        : calc($xs * $line-height-base) rem;
+  $line-height-sm        : calc($sm * $line-height-base) rem;
+  $line-height-md        : calc($md * $line-height-base) rem;
+  $line-height-lg        : calc($lg * $line-height-base) rem;
+  $line-height-xl        : calc($xl * $line-height-base) rem;
+  $line-height-xxl       : calc($xxl * $line-height-base) rem;
+
+  $line-height-body      : $line-height-base;
+
+  $heading-base-unit     : 1.25vh !default;
+  // scss-docs-end font-variables

@@ -1,0 +1,8 @@
+@mixin nav-gradient($gradient-secondary) {
+    background-image: $gradient-secondary;
+    height:100vh;
+    background-size:cover;
+    background-blend-mode: hard-light;
+    animation: hue-rotate 3s linear infinite;
+    @include hue-rotate;
+  }

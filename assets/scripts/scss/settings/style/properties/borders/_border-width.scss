@@ -1,0 +1,16 @@
+    /* Border Width */
+    $border-widths     : (
+     1                 : 1px,
+     2                 : 2px,
+     3                 : 3px,
+     4                 : 4px,
+     5                 : 5px
+    ) !default;
+
+    $border-width-xs   : 1px * $xs !default;
+    $border-width-sm   : 2px * $sm !default; /* 1.75 */
+    $border-width-md   : 3px * $md !default;
+    $border-width-lg   : 4px * $lg !default;
+    $border-width-xl   : 5px * $xl !default;
+    $border-width-focus: $border-width-lg !default;
+$btn-focus-width       : $border-width-focus !default;

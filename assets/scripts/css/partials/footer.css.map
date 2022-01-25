@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../src/sass/partials/footer.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAAA;AAMA;EACE;EACA","file":"footer.css","sourcesContent":["/**\n * partials/footer\n * ---\n */\n\n\n.footer {\n  border: 2px solid red;\n  text-align: right;\n}\n"]}

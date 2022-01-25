@@ -1,0 +1,20 @@
+$horizontal-offset    : 2vh !default;
+$vertical-offset      : 2.75vw !default;
+$horizontal-offset-px : 16px !default; // 1vh = 8px !default;
+$vertical-offset-px   : 16px !default; // 1vw = 6px !default;
+
+$offset-xs: calc($offset * $xs) !default; /* 56px */
+$offset-sm: calc($offset * $sm) !default; /* .76 */
+$offset-md: calc($offset * $md) !default; /* 1.10px */
+$offset-lg: calc($offset * $lg) !default; /* 1.56 */
+$offset-xl: calc($offset * $xl) !default; /* 2.25 */
+$offset-xxl: calc($offset * $xxl) !default; /* 3.06px */
+
+$offset-y             : calc($offset * 1.5) !default;
+$offset-x             : $offset !default;
+
+$offset-y-sm          : $offset-y * $sm !default;
+$offset-x-sm          : $offset-x * $sm !default;
+
+$offset-y-lg          : $offset-y * $lg !default;
+$offset-x-lg          : $offset-x * $lg !default;

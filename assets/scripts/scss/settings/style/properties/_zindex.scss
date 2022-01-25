@@ -1,0 +1,28 @@
+$z-index-html: 25 !default;
+$z-index-body: 50 !default;
+$z-index-wrapper: 100 !default;
+
+$z-index-main: 300 !default;
+
+$z-index-article: 400 !default;
+
+$z-index-content: 405 !default;
+
+$z-index-header: 500 !default;
+$z-index-site-title: 525 !default;
+
+$z-index-footer: 600 !default;
+
+$z-index-sidebar: 615 !default;
+
+$z-index-nav: 700 !default;
+
+$z-index-dropdown: 1000 !default;
+$z-index-sticky: 1020 !default;
+$z-index-fixed: 1030 !default;
+$z-index-offcanvas-backdrop: 1040 !default;
+$z-index-offcanvas: 1045 !default;
+$z-index-modal-backdrop: 1050 !default;
+$z-index-modal: 1055 !default;
+$z-index-popover: 1070 !default;
+$z-index-tooltip: 1080 !default;

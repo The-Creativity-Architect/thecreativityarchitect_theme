@@ -1,27 +1,17 @@
-<?php /* Template Part: Sidebar */ ?>
-<?php
-/**
- * 	This is the sidebar!
- *
- *	This file will render the sidebar, as defined by the user in the admin area
- *
-*/
-?>
-			<?php if ( ! dynamic_sidebar( 'sidebar' ) ) : // If the user hasn't defined any specific widgets in the admin yet, display a couple dummy widgets, as written below ?>
-				<aside id="archives" class="widget">
-					<h3 class="side-title"><?php _e( 'Archives', 'the-creativity-architect' ); // Wordpress archives widget ?></h3>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
-				</aside>
+<!-- sidebar -->
+<aside class="sidebar" role="complementary">
 
-				<aside id="meta" class="widget">
-					<h3 class="side-title"><?php _e( 'Meta', 'the-creativity-architect' ); // Wordpress meta widget ?></h3>
-					<ul>
-						<?php wp_register(); ?>
-						<li><?php wp_loginout(); ?></li>
-						<?php wp_meta(); ?>
-					</ul>
-				</aside>
+			<h1><?php the_title(); ?></h1>
 
-			<?php endif; // end sidebar widget area ?>
+	<div class="sidebar-widget">
+		<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-1' ) ) ?>
+	</div>
+
+	<div class="sidebar-widget">
+		<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'widget-area-2' ) ) ?>
+	</div>
+
+	<?php get_template_part( 'searchform' ); ?>
+
+</aside>
+<!-- /sidebar -->
