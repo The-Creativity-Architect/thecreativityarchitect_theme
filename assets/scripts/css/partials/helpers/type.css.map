@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../../../src/sass/partials/helpers/type.scss"],"names":[],"mappings":"AAAA;AAEA;EACE;EACA","file":"type.css","sourcesContent":["/* TEXT SELECTORS ___ */\n\n.vertical {\n  writing-mode: vertical-lr;\n  rotate: 90deg;\n}\n"]}

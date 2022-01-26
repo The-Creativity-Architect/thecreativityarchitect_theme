@@ -1,0 +1,5 @@
+$body-gradient         :
+    radial-gradient( circle at top left, $primary 12%, transparent, $white ),
+    radial-gradient( circle at top left, $primary 24%, $secondary, transparent, $white ),
+    radial-gradient( circle at top left, $primary 36%, $secondary 24%, $accent, transparent, $white ),
+    radial-gradient( circle at top left, $primary 48%, $secondary 36%, $accent 24%, transparent, $white );

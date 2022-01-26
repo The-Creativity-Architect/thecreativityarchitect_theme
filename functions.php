@@ -1,4 +1,4 @@
-<?php
+source<?php
 /**
  * Author: CJMTermini | @deviorobert
  * URL: .com | @
@@ -33,12 +33,12 @@ if ( function_exists( 'add_theme_support' ) ) {
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use.
     add_theme_support('custom-background', array(
     'default-color' => 'FFF',
-    'default-image' => get_template_directory_uri() . '/assets/img/backgrounds/mobile/9.png'
+    'default-image' => get_template_directory_uri() . '/source/img/backgrounds/mobile/9.png'
     ));
 
     // Add Support for Custom Header - Uncomment below if you're going to use.
     add_theme_support('custom-header', array(
-    'default-image'          => get_template_directory_uri() . '/assets/img/logo/logo-name-large.png',
+    'default-image'          => get_template_directory_uri() . '/source/img/logo/logo-name-large.png',
     'header-text'            => false,
     'default-text-color'     => '000',
     'width'                  => 1000,
@@ -90,18 +90,18 @@ function THEMENAME_header_scripts() {
         if ( THEMENAME_DEBUG ) {
             // jQuery
             wp_deregister_script( 'jquery' );
-            wp_register_script( 'jquery', get_template_directory_uri() . '/assets/scripts/js/lib/jquery.js', array(), '1.11.1' );
+            wp_register_script( 'jquery', get_template_directory_uri() . '/source/js/lib/jquery.js', array(), '1.11.1' );
 
             // Conditionizr
-            wp_register_script( 'conditionizr', get_template_directory_uri() . '/assets/scripts/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' );
+            wp_register_script( 'conditionizr', get_template_directory_uri() . '/source/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0' );
 
             // Modernizr
-            wp_register_script( 'modernizr', get_template_directory_uri() . '/assets/scripts/js/lib/modernizr.js', array(), '2.8.3' );
+            wp_register_script( 'modernizr', get_template_directory_uri() . '/source/js/lib/modernizr.js', array(), '2.8.3' );
 
             // Custom scripts
             wp_register_script(
                 'THEMENAMEscripts',
-                get_template_directory_uri() . '/assets/scripts/js/scripts.js',
+                get_template_directory_uri() . '/source/js/scripts.js',
                 array(
                     'conditionizr',
                     'modernizr',
@@ -115,7 +115,7 @@ function THEMENAME_header_scripts() {
         // If production
         } else {
             // Scripts minify
-            wp_register_script( 'THEMENAMEscripts-min', get_template_directory_uri() . '/assets/scripts/js/scripts.min.js', array(), '1.0.0' );
+            wp_register_script( 'THEMENAMEscripts-min', get_template_directory_uri() . '/source/js/scripts.min.js', array(), '1.0.0' );
             // Enqueue Scripts
             wp_enqueue_script( 'THEMENAMEscripts-min' );
         }
@@ -126,7 +126,7 @@ function THEMENAME_header_scripts() {
 function THEMENAME_conditional_scripts() {
     if ( is_page( 'pagenamehere' ) ) {
         // Conditional script(s)
-        wp_register_script( 'scriptname', get_template_directory_uri() . '/assets/scripts/js/scriptname.js', array( 'jquery' ), '1.0.0' );
+        wp_register_script( 'scriptname', get_template_directory_uri() . '/source/js/scriptname.js', array( 'jquery' ), '1.0.0' );
         wp_enqueue_script( 'scriptname' );
     }
 }
@@ -135,7 +135,7 @@ function THEMENAME_conditional_scripts() {
 function THEMENAME_styles() {
     if ( THEMENAME_DEBUG ) {
         // normalize-css
-        wp_register_style( 'normalize', get_template_directory_uri() . '/assets/scripts/css/lib/normalize.css', array(), '7.0.0' );
+        wp_register_style( 'normalize', get_template_directory_uri() . '/source/css/lib/normalize.css', array(), '7.0.0' );
 
         // Custom CSS
         wp_register_style( 'THEMENAME', get_template_directory_uri() . '/style.css', array( 'normalize' ), '1.0' );
@@ -378,7 +378,7 @@ add_filter( 'avatar_defaults', 'THEMENAMEgravatar' ); // Custom Gravatar in Sett
 add_filter( 'body_class', 'add_slug_to_body_class' ); // Add slug to body class (Starkers build)
 add_filter( 'widget_text', 'do_shortcode' ); // Allow shortcodes in Dynamic Sidebar
 add_filter( 'widget_text', 'shortcode_unautop' ); // Remove <p> tags in Dynamic Sidebars (better!)
-add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' ); // Remove surrounding <div> from WP Navigation
+add_filter( 'wp_nav_menu_args', 'THEMENAME_nav_menu_args' ); // Remove surrounding <div> from WP Navigation
 // add_filter( 'nav_menu_css_class', 'my_css_attributes_filter', 100, 1 ); // Remove Navigation <li> injected classes (Commented out by default)
 // add_filter( 'nav_menu_item_id', 'my_css_attributes_filter', 100, 1 ); // Remove Navigation <li> injected ID (Commented out by default)
 // add_filter( 'page_css_class', 'my_css_attributes_filter', 100, 1 ); // Remove Navigation <li> Page ID's (Commented out by default)

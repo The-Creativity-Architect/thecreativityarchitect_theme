@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../../../../src/sass/partials/helpers/alignments/alignments.scss"],"names":[],"mappings":"AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI","file":"alignments.css","sourcesContent":["\n.align-text-left {\n    text-align: left;\n}\n\n.align-text-right {\n    text-align: right;\n}\n\n.align-text-center {\n    text-align: center;\n}\n"]}

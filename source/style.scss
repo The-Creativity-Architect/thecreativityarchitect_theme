@@ -1,0 +1,64 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+
+@import "scss/banner";
+
+@import "scss/fonts";
+@import "scss/variables";
+
+// Modules
+@import "scss/settings/tools/function";
+
+@import "scss/settings/tools/change-percentage";
+@import "scss/settings/style/color";
+@import "scss/settings/style/color/variables";
+@import "scss/settings/style/properties";
+@import "scss/settings/style/typography";
+
+@import "scss/settings/grid/theme-grid";
+
+@import "scss/settings/tools/maps/map-color";
+@import "scss/settings/tools/maps/maps";
+@import "scss/settings/tools/maps/map-merge";
+@import "scss/settings/tools/mixins";
+@import "scss/settings/tools/utilities";
+
+  $wrapper-width          : $max-content-width;
+
+@import "scss/components/pattern";
+@import "scss/settings/tools/root";
+
+@import "scss/settings/tools/reset";
+
+
+// scss/scss/partials
+@import "scss/partials/helpers/type";
+@import "scss/partials/helpers/lists";
+@import "scss/partials/helpers/code";
+@import "scss/partials/helpers/print";
+@import "scss/partials/helpers/ratio";
+@import "scss/partials/helpers/span";
+@import "scss/partials/helpers/stacks";
+@import "scss/partials/helpers/text-truncation";
+@import "scss/partials/helpers/visibility";
+@import "scss/partials/helpers/visually-hidden";
+@import "scss/partials/helpers/vr";
+@import "scss/partials/helpers/alignment";
+@import "scss/partials/helpers/clearfix";
+@import "scss/partials/helpers/a11y";
+
+@import "scss/partials/wordpress";
+
+// Global
+@import "scss/partials/base";
+@import "scss/partials/wrapper";
+@import "scss/partials/header";
+@import "scss/partials/nav";
+@import "scss/partials/sidebar";
+@import "scss/partials/footer";
+
+// Optional Utilities
+@import "scss/settings/tools/utilities/print";

@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../../../../src/sass/modules/tools/mixins/font-size.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA","file":"font-size.css","sourcesContent":["/*\n * Output font size in px/rem\n */\n\n@mixin font-size($px) {\n    font-size: $px + px;\n    font-size: #{$px / 16}rem;\n}\n"]}
