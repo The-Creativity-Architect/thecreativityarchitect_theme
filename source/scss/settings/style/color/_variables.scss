@@ -24,12 +24,10 @@ $link                      : tint($secondary, $link-percentage) !default;
   $inactive-bg             : shade($inactive, $background-percentage) !default;
   $inactive-border         : shade($inactive, $border-percentage) !default;
 
-
 /* __________________________ OBJECTS */
 $button                    : tint($secondary, $button-percentage);
 $border                    : tint($accent, $border-percentage);
 $shadow                    : tint($primary, $shadow-percentage);
-
 
 /* __________________________ MODULES */
 $card                      : tint($primary, $card-percentage);

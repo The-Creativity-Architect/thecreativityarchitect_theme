@@ -27,7 +27,7 @@ $accent-font             : "GlassAntiqua-Regular", sans-serif;
 
 /* ________________________________________________________ TEXTS & TITLES */
   /* Color */
-  $text                  : shade($primary, 60%);
+  $text                  : shade($primary, $text-percentage);
   $btn-text              : shade($text, $button-percentage);
   $caption-text          : shade($text, $caption-percentage);
 

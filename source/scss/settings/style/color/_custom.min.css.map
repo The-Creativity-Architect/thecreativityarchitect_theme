@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "_custom.min.css",
+	"sources": [
+		"_custom.scss"
+	],
+	"sourcesContent": [
+		"/* Custom Colors */\n  $silver                       : #a8a9ad;\n$silver-rgb   : rgb(168,169,173) !default;\n\n$custom-colors: (\n  'silver': $silver,\n  'silver-rgb': $silver-rgb\n);\n"
+	],
+	"names": [],
+	"mappings": ""
+}

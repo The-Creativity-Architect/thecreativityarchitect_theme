@@ -1,2 +1,8 @@
 /* Custom Colors */
   $silver                       : #a8a9ad;
+$silver-rgb   : rgb(168,169,173) !default;
+
+$custom-colors: (
+  'silver': $silver,
+  'silver-rgb': $silver-rgb
+);
