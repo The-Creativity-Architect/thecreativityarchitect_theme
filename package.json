@@ -309,7 +309,7 @@
     "is-primitive": "^2.0.0",
     "is-regexp": "^2.1.0",
     "is-supported-regexp-flag": "^1.0.1",
-    "is-svg": "^2.1.0",
+    "is-svg": "^4.3.0",
     "is-ttf": "^0.2.2",
     "is-typedarray": "^1.0.0",
     "is-utf8": "^0.2.1",
