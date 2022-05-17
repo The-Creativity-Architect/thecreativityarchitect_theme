@@ -162,7 +162,7 @@
     "duplexer2": "^0.0.2",
     "ecc-jsbn": "^0.1.2",
     "editorconfig": "^0.13.3",
-    "ejs": "^2.7.4",
+    "ejs": "^3.1.7",
     "electron-to-chromium": "^1.4.53",
     "emoji-regex": "^8.0.0",
     "emojis-list": "^3.0.0",
