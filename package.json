@@ -253,7 +253,7 @@
     "html-comment-regex": "^1.1.2",
     "html-tags": "^1.2.0",
     "html-void-elements": "^1.0.5",
-    "http-cache-semantics": "^4.1.0",
+    "http-cache-semantics": "^4.1.1",
     "http-proxy-agent": "^4.0.1",
     "http-signature": "^1.2.0",
     "https-proxy-agent": "^5.0.0",
